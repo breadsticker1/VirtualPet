@@ -1,27 +1,102 @@
-
 void setup()
 {
-size(400,400);
+  size(450,400);
 }
 void draw()
 {
-background(175,188,131);
-//shell
-fill(113,67,46);
-noStroke();
-ellipse(200,190,110,110);
-//body
-fill(222,173,150);
-ellipse(208,240,130,28);
-ellipse(130,178,50,125);
-bezier(130,113,150,240,240,220,274,240);
-beginShape();
-curveVertex(300,100);
-curveVertex(300,100);
-curveVertex(375,200);
-curveVertex(500,300);
-curveVertex(375,400);
-curveVertex(300,500);
-endShape();
-
+  background(175,188,131);
+  //cloud
+  fill(255,255,255);
+  ellipse(325,110,150,100);
+  ellipse(380,145,120,80);
+  //shell
+  noStroke();
+  strokeWeight(2);
+  fill(113,67,46);
+  ellipse(255,190,200,210);
+  //swirl
+  noFill();
+  stroke(77,52,41);
+  strokeWeight(3);
+  beginShape();
+  curveVertex(230,250);
+  curveVertex(230,250);
+  curveVertex(200,200);
+  curveVertex(190,150);
+  curveVertex(230,125);
+  curveVertex(280,120);
+  curveVertex(320,180);
+  curveVertex(270,200);
+  curveVertex(245,170);
+  curveVertex(255,155);
+  curveVertex(255,155);
+  endShape();
+  //tentacle
+  stroke(199,154,133);
+  strokeWeight(5);
+  beginShape();
+  curveVertex(115,100);
+  curveVertex(115,100);
+  curveVertex(100,78);
+  curveVertex(80,60);
+  curveVertex(80,60);
+  endShape();
+  beginShape();
+  curveVertex(137,100);
+  curveVertex(137,100);
+  curveVertex(146,78);
+  curveVertex(160,60);
+  curveVertex(160,60);
+  endShape();
+  fill(199,154,133);
+  ellipse(80,60,7,8);
+  ellipse(160,60,7,8);
+  //body
+  noStroke();
+  fill(222,173,150);
+  ellipse(128,195,70,210);
+  beginShape();
+  curveVertex(152,118);
+  curveVertex(152,118);
+  curveVertex(205,220);
+  curveVertex(350,300);
+  curveVertex(225,300);
+  curveVertex(133,300);
+  curveVertex(133,300);
+  endShape();
+  fill(199,154,133);
+  ellipse(110,250,10,14);
+  ellipse(115,270,8,12);
+  ellipse(170,200,12,16);
+  //eyes
+  fill(77,52,41);
+  ellipse(115,115,9,13);
+  ellipse(140,115,9,13);
+  fill(255,255,255);
+  ellipse(116,114,2,3);
+  ellipse(141,114,2,3);
+  //mouth
+  noFill();
+  stroke(77,52,41);
+  strokeWeight(2);
+  ellipse(127,121,10,10);
+  noStroke();
+  fill(222,173,150);
+  rect(121,123,13,8);
+  //flowers
+  fill(50,69,49);
+  rect(79,260,2,33);
+  rect(335,250,2,33);
+  fill(232,188,209);
+  ellipse(80,251,14,15);
+  ellipse(72,258,14,15);
+  ellipse(88,258,14,15);
+  ellipse(80,266,14,15);
+  ellipse(336,242,14,15);
+  ellipse(329,248,14,15);
+  ellipse(344,248,14,15);
+  ellipse(336,256,14,15);
+  fill(255,214,51);
+  ellipse(80,258,5,5);
+  ellipse(336,249,5,5);
 }
